@@ -2,9 +2,10 @@ import { Milestone, Reason } from "./types";
 
 /*
   IMPORTANT:
-  This makes images work after deployment (GitHub Pages / Vercel / Netlify)
+  This ensures images work both locally and after deployment
+  (Vercel / Netlify / GitHub Pages)
 */
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL || "/";
 
 /* -------------------- LOVE JOURNEY TIMELINE -------------------- */
 
@@ -20,28 +21,28 @@ export const MILESTONES: Milestone[] = [
     date: "April 3, 2023",
     title: "Last Day of School",
     description:
-      'Walking the school corridors one last time together, marking the end of a beautiful chapter. "A chapter ends, but the story of us is just beginning."',
+      'Walking the school corridors one last time together, marking the end of a beautiful chapter.',
     icon: "🏫",
   },
   {
     date: "April 2023",
     title: "Typewriting Class Meets",
     description:
-      'Our regular meetups at typewriting class after school. Every click of the keys felt like a heartbeat.',
+      "Our regular meetups at typewriting class after school. Every click of the keys felt like a heartbeat.",
     icon: "⌨️",
   },
   {
     date: "June 13, 2023",
     title: "The Distance Test",
     description:
-      'Moving to long distance as you went away for NEET coaching. Communication was hard, but our love stood strong.',
+      "Moving to long distance as you went away for NEET coaching. Communication was hard, but our love stood strong.",
     icon: "📡",
   },
   {
     date: "May 4, 2024",
     title: "Welcome Back",
     description:
-      'The long wait finally ended when you returned from coaching. My world felt whole again.',
+      "The long wait finally ended when you returned from coaching. My world felt whole again.",
     icon: "✨",
   },
   {
@@ -61,22 +62,19 @@ export const MILESTONES: Milestone[] = [
   {
     date: "May 4, 2025",
     title: "The Journey Continues",
-    description:
-      "You completed NEET, and I couldn’t be more proud of you.",
+    description: "You completed NEET, and I couldn’t be more proud of you.",
     icon: "🎓",
   },
   {
     date: "May 16, 2025",
     title: "Victory Over the Storms",
-    description:
-      "A meetup after many struggles. We proved nothing can break us.",
+    description: "A meetup after many struggles. We proved nothing can break us.",
     icon: "🌈",
   },
   {
     date: "May 28, 2025",
     title: "A New Rhythm",
-    description:
-      "A quiet moment where words were no longer needed.",
+    description: "A quiet moment where words were no longer needed.",
     icon: "✨",
   },
   {
@@ -103,20 +101,18 @@ export const MILESTONES: Milestone[] = [
   {
     date: "December 28, 2025",
     title: "Ending the Year with Love",
-    description:
-      "Our final meetup of the year — ending with more love than ever.",
+    description: "Our final meetup of the year — ending with more love than ever.",
     icon: "🎆",
   },
   {
     date: "Present - 2026",
     title: "Five Years Strong",
-    description:
-      "Entering our 5th Valentine’s Day together.",
+    description: "Entering our 5th Valentine’s Day together.",
     icon: "♾️",
   },
 ];
 
-/* -------------------- MEMORIES GALLERY -------------------- */
+/* -------------------- MEMORY GALLERY -------------------- */
 
 export const MEMORIES = [
   { url: `${base}images/child.jpeg`, caption: "Childhood us ❤️" },
